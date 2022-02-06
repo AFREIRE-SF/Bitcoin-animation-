@@ -1,0 +1,49 @@
+body { background-color:black; }
+
+
+ .primeira { 
+    text-align:center;
+    font-family: Helvetica, arial;
+    color: white;
+}
+
+.circle {
+position: relative;
+width: 260px;
+height: 260px;
+border-radius:50%;
+border: 10px solid blue;
+animation: circle 2.5s ease-in-out infinite;
+margin-left: auto;
+margin-right: auto;
+}
+
+img { 
+    position: absolute;
+  
+}
+ 
+@keyframes circle {
+    0% { border-color: blue; 
+    transform: scale(1);
+}
+
+25% { border-color:green; 
+    transform: scale(0.8);
+}
+
+50% { 
+    border-color: purple;
+    transform: scale(1.15);
+}
+
+75% { 
+    border-color:yellow;
+    transform: scale(0.7);
+}
+
+100% { 
+    border-color: blue;
+    transform: scale(1);
+} 
+}
